@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Bubblegum Sans', sans-serif;
+    background-image: linear-gradient(180deg, rgba(27, 135, 244, 0.651), rgb(15, 50, 156), rgb(3, 3, 49));
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    margin-top: 5vh;
+    color: rgb(4, 4, 51);
+}
+
+.game-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 0
+}
+
+.grid-container{
+    /* border: red solid; */
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:stretch;
+    position: relative;
+}
+
+.input-box {
+    flex-grow: 1;
+    flex-basis: 150px;
+    height: 162px;
+    margin: 2px;
+    background-color: rgb(159, 164, 226);
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerMark {
+    font-size: 10em; 
+    margin: 0;
+    padding: 0;
+    /* border: yellow solid; */
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-screen{
+    /* width: 25vw;
+    height: inherit; */
+    flex-basis: 30vw;
+    margin: 0 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reset-game {
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 10%;
+    margin-bottom: 15%;
+    border-radius: 8px;
+    background-color: blue;
+}
+
+.reset-game p{
+    font-size: 1.5em;
+    font-family: 'Bubblegum Sans';
+    margin: 0 auto;
+}
+
+.info-screen h1 {
+    margin-top: 20%;
+    font-size: 4em;
+    min-width: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.score-screen{
+    flex-basis: 30vw;
+    margin: 0 2vw;
+    font-size: 4em;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.score-screen h1{
+    text-align: center;
+    font-size: 6rem;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.player-score-x{
+    left: 30%;
+    top: 15%;
+    transform: translate(-30%, -15%);
+}
+
+.player-score-y {
+    left: 70%;
+    top: 15%;
+    transform: translate(-70%, -15%);
+}
+
+.player-count-x{
+    left: 30%;
+    top: 45%;
+    transform: translate(-30%, -45%);
+}
+
+.player-count-y {
+    left: 70%;
+    top: 45%;
+    transform: translate(-70%, -45%);
+}
+
+.vert-bar{
+    width: 75%;
+    height: 2%;
+    background-color: black;
+    left: 50%;
+    top: 32%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+}
+
+.hori-bar {
+    width: 2%;
+    top: 15%;
+    height: 40%;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reset-score {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    height: 10%;
+    transform: translate(-50%, -75%);
+    width: 50%;
+    background-color: blue;
+    border-radius: 8px;
+}
+
+.reset-score p {
+    font-size: 1.5em;
+    font-family: "Bubblegum Sans";
+    margin: 0 auto
+}
+
+.cross-out{
+    position: absolute;
+    width: 90%;
+    height: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: black;
+    opacity: 0;
+    top: -10%;
+    transition: all 0.5s;
+}
+
+.top-row {
+    opacity: 1;
+    top: 15%;
+}
+
+.mid-row {
+    opacity: 1;
+    top: 50%;
+}
+
+.bottom-row {
+    opacity: 1;
+    top: 83%;
+}
+
+.left-col {
+    opacity: 1;
+    rotate: 90deg;
+    left: -65%;
+    top: 50%;
+}
+
+.mid-col {
+    opacity: 1;
+    rotate: 90deg;
+    top: 50%;
+}
+
+.right-col {
+    opacity: 1;
+    rotate: 90deg;
+    left: 38%;
+    top: 50%;
+}
+
+.forward-slash {
+    opacity: 1;
+    rotate: 45deg;
+    transform-origin: center;
+    width: 120%;
+    top: 49%;
+    left: -10%;
+}
+
+.backward-slash {
+    opacity: 1;
+    rotate: -45deg;
+    transform-origin: center;
+    width: 120%;
+    top: 49%;
+    left: -10%;
+}

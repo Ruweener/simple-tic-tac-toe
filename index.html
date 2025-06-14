@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tic Tac Toe App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Ruween's Tic Tac Toe Game</h1>
+
+    <div class="game-container">
+        <div class="info-screen">
+            <h1>Player X's turn</h1>
+            <button class="reset-game"><p>Reset Game</p></button>
+        </div>
+
+        <div class="grid-container">
+            <div class="input-box" data-boxnum="1"></div>
+            <div class="input-box" data-boxnum="2"></div>
+            <div class="input-box" data-boxnum="3"></div>
+            <div class="input-box" data-boxnum="4"></div>
+            <div class="input-box" data-boxnum="5"></div>
+            <div class="input-box" data-boxnum="6"></div>
+            <div class="input-box" data-boxnum="7"></div>
+            <div class="input-box" data-boxnum="8"></div>
+            <div class="input-box" data-boxnum="9"></div>
+            <div class="cross-out"></div>
+        </div>
+
+        <div class="score-screen">
+            <h1 class="player-score-x">X</h1>
+            <h1 class="player-score-y">O</h1>
+            <h1 class="player-count-x"></h1>
+            <h1 class="player-count-y"></h1>
+            <div class="hori-bar"></div>
+            <div class="vert-bar"></div>
+            <button class="reset-score"><p>Reset Score</p></button>
+
+        </div>
+
+
+    </div>
+
+    
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
